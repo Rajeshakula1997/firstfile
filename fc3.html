@@ -1,0 +1,22 @@
+<html>
+<head>
+	<script>
+	function f() {
+	     var a=document.getElementById("one").value;
+	     var b=document.getElementById("two").value;
+		 var c=(parseInt(a)+parseInt(b));
+		 window.alert(c);
+		 document.getElementById("final").value=c;
+	}
+	</script>
+</head>
+<body>
+
+<input type="text" id="one"> 
+<input type="text" id="two"> 
+
+<input type="button" value="click" onclick="f()">
+<input type="text" id="final"> 
+ 
+</body>
+</html>
