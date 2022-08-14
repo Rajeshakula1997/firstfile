@@ -1,0 +1,144 @@
+{
+  "user": [
+    {
+      "name": "Mahesh",
+      "mobile": "9553284646",
+      "city": "Hyderabad",
+      "id": 2
+    },
+    {
+      "name": "suresh02",
+      "mobile": "8919318779",
+      "city": "Mumbai",
+      "id": 3
+    },
+    {
+      "name": "RAJESH",
+      "mobile": "9553284646",
+      "city": "Bangalore",
+      "id": 5
+    },
+    {
+      "name": "Rajesh Akula",
+      "mobile": "",
+      "city": "TADEPALLIGUDEM, West Godavari",
+      "id": 6
+    }
+  ],
+  "product": [
+    {
+      "id": 2,
+      "item": "AC",
+      "brand": "Hitachi",
+      "price": 25000,
+      "model": "B22"
+    },
+    {
+      "id": 3,
+      "item": "Refrigerator",
+      "brand": "Samsung",
+      "price": 45000,
+      "model": "B333"
+    },
+    {
+      "item": "10",
+      "brand": "10",
+      "price": "10",
+      "model": "10",
+      "id": 4
+    },
+    {
+      "item": "asa",
+      "brand": "asdd",
+      "price": "200",
+      "model": "vov",
+      "id": 5
+    },
+    {
+      "item": "tv",
+      "brand": "sony",
+      "price": "100",
+      "model": "sony1",
+      "id": 6
+    }
+  ],
+  "book": [
+    {
+      "id": "BL001",
+      "title": "HTML",
+      "author": "Prentice Hall",
+      "edition": "02",
+      "price": 600
+    },
+    {
+      "id": "BL002",
+      "title": "CSS",
+      "author": "Tata Mcgraw Hill",
+      "edition": 5,
+      "price": 750
+    },
+    {
+      "id": "BL003",
+      "title": "JAVASCRIPT",
+      "author": "Tata Mcgraw Hill",
+      "edition": 9,
+      "price": 499
+    },
+    {
+      "id": "BL004",
+      "title": "REACTJS",
+      "author": "Tata Mcgraw Hill",
+      "edition": 5,
+      "price": "500"
+    },
+    {
+      "id": "BL005",
+      "title": "ANGULAR",
+      "author": "TATA",
+      "edition": "05",
+      "price": "120"
+    }
+  ],
+  "client": [
+    {
+      "id": 1,
+      "name": "Adam Williams",
+      "company": "ABC PVT. LTD.",
+      "city": "Roman",
+      "state": "CA",
+      "email": "abc123@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "John Smith",
+      "company": "BNS PVT. LTD.",
+      "city": "Dallas",
+      "state": "AZ",
+      "email": "bns123@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Jennifer Stone",
+      "company": "HJK PVT. LTD.",
+      "city": "Chicago",
+      "state": "TX",
+      "email": "hjk123@gmail.com"
+    },
+    {
+      "name": "RAJESH",
+      "company": "TCS",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "email": "rajeshakula0974@gmail.comcom",
+      "id": 4
+    },
+    {
+      "name": "CHINNA",
+      "company": "WIPRO",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "email": "rajeshyadav.a.839@gmail.com",
+      "id": 5
+    }
+  ]
+}

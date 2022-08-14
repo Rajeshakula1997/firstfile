@@ -1,0 +1,45 @@
+body{
+      
+      margin: 10px 8% 10px;
+}
+
+#header{
+      background: rgb(10, 10, 245);
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 40px;
+}
+button{
+      background-color: rgb(16, 196, 220);
+      padding: 15px 40px 15px;
+      border: 3px solid rgb(225, 7, 7);
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 20px;
+      border-radius: 50%;
+}
+button:hover{
+      background-color: navy;
+   }
+   button:focus{
+         background-color: rgb(61, 133, 61);
+   }
+   
+   #container {
+       min-height: 430px;
+       margin: auto;
+       box-shadow: 10px 50px 40px 40px navy;
+       text-align: center;
+    }   
+    
+    .self{
+         width: 15%;
+         margin: 1%;
+         padding: 1%;
+         float:left;
+      
+    }
+    #clearblock{
+         clear:both;
+    }

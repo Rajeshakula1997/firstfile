@@ -1,0 +1,229 @@
+
+  javaScript is scripting language used both on the client-side(front end) and server-side(back end).
+        that allows you to make web pages interactive.
+	 
+	  Using Java Script:
+	   1.Real-time Networking Apps(linkdin, facebook)
+	   2.Wed/mobile applicarions(amezon, flipkart)
+	   3.Command-line tools
+	   4. Games
+	   
+	   
+	   In var, Int and Const
+	   
+	  constructor is folloed only in Class
+	      the main purpose of the constructoris to initialize the object values(to initialize the instand variable values)
+				
+				functions lo class use cheyochu, class lo functionsuse cheyochu
+				class lo functionsuse chesepudu that functionsare called as methods not called as functions
+				
+	The async.. await syntax in ES6 use to handle the http promises requests.	
+     both async and await use at a time to for good perfect result. 
+( Asynchronous )thet do Non-Blocking manner lo execute avthundi, non-blocking means executelines one line after other line and next line.
+they not execute without One line to othetr line. 
+
+   Destructuring :
+        Destructuring that allow to unpack values from arrays or object, into individual variables.
+		
+		Spread :
+		     Spread operator takes an iterable object and expand it into individual elements.
+			 ex:-1
+			       var arr1 = [10,20,30,40];
+				   var arr2 = [...arr1, 50,60];
+				       console.log(arr2)
+				
+					O/P : [10,20,30,40,50,60]	
+					
+					
+			 ex:-2
+					var obj1 = {
+					            name : 'john'
+								}
+					 var obj2 = {
+							  ...obj1,
+							  age:25,
+							  mail:"mail@gmail.com"
+							  }
+					   console.log(obj2)
+
+					O/P : 	age : 25,
+							mail: "mail@gmail.com",
+							name :   "john"
+							  
+			
+	Map :-
+		Map Syntax: Variable.map((element) => print(element))
+		
+		ex: 
+		    var arr = [10,20,30,40,50,60]
+			arr.map((element)=> console.log(element))
+			
+			O/P:    10
+				    20
+					30
+					40
+					50
+					60 
+			
+	Filter :-
+       Filter Syntax: array.filter((element)=> condition)	
+	   EX:
+		1.	var arr = [10,20,30,40,50]
+			let filtered = arr.filter((element)=> element>20);
+			console.log(filtered);
+			
+		O/P: 30
+			 40
+			50	
+			
+			
+		2.	var arr = [10,20,30,40,50]
+			let filtered = arr.filter((element)=> element>20);
+			filtered.map((elememt) => console.log(elememt))
+			
+		O/P: 30
+			 40
+			50	
+			
+ JAVASCRIPT OOPs :- Object-Oriented Programming
+          1.Abstraction
+		  2.Encapsulation
+		  3.Inheritance
+		  4.Polymorphism
+		
+	1.Abstraction: 
+		It is hiding a internal process(background process)	only showing required information to us.  
+					(OR)
+			The main purpose of abstraction is hiding the unnecessary details from the user. and secure with hackers		
+		
+		  #.Constructor:
+		          A constructor is a special function that creates and initializes an object instance of a class. 
+				  In JavaScript, a constructor gets called when an object is created using the new keyword. 
+				  The purpose of a constructor is to create a new object and set values for any existing object properties.
+		        (OR)
+				What is constructor explain?
+				A constructor is a special method of a class or structure in object-oriented programming that initializes 
+				a newly created object of that type. Whenever an object is created, the constructor is called automatically.
+		
+	2.Encapsulation:
+	      It is binding in class the both data variables and methods hides them from other classse.
+		  
+	3.Inheritance:
+            Inheritance is the a mechanicsm in which one class acquires the property of another class.	
+			
+	4.Polymorphism:
+			 ploy = many  +  morph(form) = many forms 
+			 Polymorphism allows us to perform a single action in different ways.
+			 
+ 
+ 
+ Advantages of OOPs:	
+      #. Reuse of code through inheritance [one class propery calls to any other class ]
+      #. Flexibility through polymorphism  [same function use in different ways]
+	  #. Easier to troubleshoot.
+	  #. Code maintainability and Code Readability.
+			  
+			  
+setTimeout():-
+     The global setTimeout() method sets  a timer which executes a function or specified piece of code once	the timer expires
+	  setTimeout(action, time_delay)
+	  
+	  ex:1. setTimeout(()=>console.log("First msg"), 3000);
+	      setTimeout(()=>console.log("Second msg"), 2000);
+	      setTimeout(()=>console.log("Third msg"), 1000);
+		  
+		  O/P: "Third msg"
+		       "Second msg"
+		       "First msg"
+			   
+		2.	for(var i=0; i<5; i++) {
+             setTimeout(()=> console.log(i), 1000); 
+			}		
+			
+		O/P:    5
+			    5
+				5
+				5
+				5    // the setTimeoutfunction callback isn't triggered until the for loop execution has completed.
+				        When the for loop has finised excutiting the value of i is 5
+						
+						
+Optional Chaining:-	
+      it is introduced in ECMAScript 2020 (ES11)	
+     Optional chaining is a safe way to access nested object properties, even if the property doesn't exist.	  
+	 
+	EX:
+	  1. let pets = {
+        cat : {
+           name : 'Neo'  }
+    }
+    1 alert(pets.cat && pets.cat.name);	
+    2 alert(pets.dog && pets.dog.name);	
+	 
+	 
+	 O/P :1 It is there alertis "Neo"
+	      2  it shows undefined
+		  
+    2. let user ={
+          admin() {
+		      console.log('I am admin Method');
+		  }
+           }	
+		   user.admin?.();
+		   
+		 O/P:   "I am admin Method"
+		 
+		 
+		 
+Babel :-  
+       Babel is many browsers are can't understanding some times bez Babel use. Babel helps the Browsers for output
+       Babel is latest started for latest version of the JS codes and giver perfect output.
+    	Babel also called as transcompailer.     
+		
+		
+		
+		          Local Storage       Session Storage
+Capacity	=	       10MB					5MB
+Browser		=		   HTML5				HTML5
+Accessible from=     Any Window			same tab
+Expires			=	   Never               on tab close
+Storage Location= 	  Browser only	       Browser only		   
+
+In boolean always used in small letters(not use True, False)
+
+ In JS 4 types of Data types :- number, string, boolean, undefined.
+ variable declaration : 
+                   #. var name = 'john';
+					  console.log(name);
+					  
+					O/P : john
+	
+ Array :- 
+      in one variable store in more then one value. 
+	     #. var name = ["Rajesh", "Mahesh", "25", "30"];
+		     console.log(name);
+			 
+			 O/P: Rajesh
+			       Mahesh
+				   25
+				   30.
+				   
+Object:-
+       JavaScript is an object-based language. Everything is an object in JavaScript. 	
+         object is a standalone entity, with properties and type.
+         (OR)
+	A Javascript object is a collection of properties and methods. It is a way to group data together and store it in a structured way.
+	  https://www.tutorialstonight.com/js/js-objects
+
+       https://www.programiz.com/javascript/object
+	   
+	 
+     -Array features          -JSON features     -Date features
+        #.isArray()		    	stringify()           valueOf()
+		#.map()
+		#.filter()
+		#.forEach()
+		#.every()
+		#.some()
+		#.indexOf()
+		#.lastIndexOf()

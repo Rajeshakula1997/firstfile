@@ -1,0 +1,83 @@
+<html>
+    <head>
+	   <style>
+	  body{
+	    margin:0px;
+		}
+		
+	   #mainmenu{
+		  margin:0px;
+		  background:black;
+		  }
+		  
+		#mainmenu li{
+		   padding:16px 30px 16px;
+			display:inline-block;
+				color:white;
+				} 
+
+       #mainmenu li:hover{
+	           background:blue;
+			   cursor:pointer;
+			   color:red;
+			   }
+			   
+		#mainmenu li  .submenu li{
+		      display:block !important;
+			  padding:8px 30px 8px !important; 
+			  }	
+			  
+		.submenu{
+		     background:blue;
+			 display:none;
+			 padding:0px;
+			 margin:15px -30px;
+			 width:250px;}			 
+			 
+		#mainmenu li:hover .submenu{
+		   position:absolute;
+		   display:block;
+		}	
+
+		#mainmenu li .submenu li:hover{
+		   background:black;
+		}	
+				
+	   </style>
+	   </head>
+	   <body>
+	         <ul id="mainmenu">
+					<li> Home </li>
+					<li> about Us </li>
+					<li> Service
+							<ul class="submenu"> 
+								<li> Software </li>
+								<li> Marketing </li>
+								<li> Employment </li>
+								<li> Banking </li>
+								<li> Others </li>
+							</ul>
+							</li>
+					<li> Technologyies
+							<ul class="submenu"> 
+								<li> HTML </li>
+								<li> CSS </li>
+								<li> BOOTSTRAP </li>
+								<li> JAVASCRIPT</li>
+								<li> JQUERY </li>
+							</ul>
+							</li>
+					<li> Branches
+							<ul class="submenu"> 
+								<li> Bangeluru </li>
+								<li> Pune </li>
+								<li> Mumbai </li>
+								<li> Hyderabad </li>
+								<li> Others </li>
+							</ul>
+							</li>
+					<li> Contact </li>
+					</ul>
+				</body>
+</html>
+				

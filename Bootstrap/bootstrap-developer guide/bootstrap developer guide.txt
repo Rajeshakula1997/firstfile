@@ -1,0 +1,255 @@
+
+   Bootstrap is 1st framework of HTML, CSS, JAVASCRIPT.
+   bootstrap is library of css.
+              It use to design responsive webpage for all type of device.
+   bootstrap is introduced by twitter in 2011.
+   bootstrap is grid system has divided all the device in 6 types based on screen width.   
+   
+   
+		   1.Xtra small  --    Screen width 0px to 576px
+		   2.small       --  	Screen width 577px to 768px
+		   3.medium     --  	Screen width 769px to 992px
+		   4.large      -- 		 Screen width 993px to 1200px
+		   5.Xtra large  -- 	 Screen width 1201px to 1400px
+		   6. Double xtra large --  Screen width > 1401px
+		   
+	-----------------------------------------------------------------------------------------------------------   
+	
+	   Note - The Grid system has given 12 classes for each category
+			The no.1 represent the 8.3333% width of current window
+			
+	    1.Xtra small  --    Screen width 0px to 576px(mobile)
+	         .col-1
+	         .col-2
+	         .col-3
+	         .col-4
+	         .col-5
+	         .col-6
+	         .col-7
+	         .col-8
+	         .col-9
+	         .col-10
+	         .col-11
+	         .col-12
+		
+		2.small       --  	Screen width 577px to 768px(tab)
+		    .col -sm -1
+	        .col-sm-2
+	        .col-sm-3
+	        .col-sm-4
+	        .col-sm-5
+	        .col-sm-6
+	        .col-sm-7
+	        .col-sm-8
+	        .col-sm-9
+	        .col-sm-10
+            .col-sm-11
+			.col-sm-12
+			
+	    3.medium     --  	Screen width 769px to 992px		(mini laptop)
+	         .col-md-1
+	         .col-md-2
+	         .col-md-3
+	         .col-md-4
+	         .col-md-5
+	         .col-md-6
+	         .col-md-7
+	         .col-md-8
+	         .col-md-9
+	         .col-md-10
+	         .col-md-11
+	         .col-md-12
+			 
+		4.large      -- 		 Screen width 993px to 1200px	 (laptop)
+		     .col-lg-1
+	         .col-lg-2
+	         .col-lg-3
+	         .col-lg-4
+	         .col-lg-5
+	         .col-lg-6
+	         .col-lg-7
+	         .col-lg-8
+	         .col-lg-9
+	         .col-lg-10
+	         .col-lg-11
+	         .col-lg-12
+			 
+		 5.Xtra large  -- 	 Screen width 1201px to 1400px
+		     .col-xl-1
+	         .col-xl-2
+	         .col-xl-3
+	         .col-xl-4
+	         .col-xl-5
+	         .col-xl-6
+	         .col-xl-7
+	         .col-xl-8
+	         .col-xl-9
+	         .col-xl-10
+	         .col-xl-11
+	         .col-xl-12
+			 
+		6. Double xtra large --  Screen width > 1401px	 
+		     .col -xxl -1
+	         .col -xxl -2
+	         .col -xxl -3
+	         .col -xxl -4
+	         .col -xxl -5
+	         .col -xxl -6
+	         .col -xxl -7
+	         .col -xxl -8
+	         .col -xxl -9
+	         .col -xxl -10
+	         .col -xxl -11
+	         .col -xxl -12
+			 
+	-------------------------------------------------------------------------------------------------------------------------------------
+
+        => 1rem = 16px; 
+	----------------------
+	1 -  0.25rem   = 4px
+	2 -  0.5rem    = 8px
+	3 -  1rem      = 16px
+	4 -  1.5rem    = 24px
+	5 -  3rem      = 48px
+	==============================
+	m-margin 
+	p-padding 
+	t-top 
+	b-bottom 
+	l-left 
+	r-right 
+	---------------------------------
+	m-1 = margin 4px all side 
+	m-2 = margin 8px all side 
+
+	------List of 25 classes for margin-----
+	m-1  , m-2  , m-3,  m-4 , m-5 
+	ml-1 , ml-2 , ml-3, ml-4, ml-5
+	mr-1 , mr-2 , mr-3, mr-4, mr-5
+	mt-1 , mt-2 , mt-3, mt-4, mt-5
+	mb-1 , mb-2 , mb-3, mb-4, mb-5
+	------List of 25 classes for padding-----
+	p-1  , p-2  , p-3,  p-4 , p-5 
+	pl-1 , pl-2 , pl-3, pl-4, pl-5
+	pr-1 , pr-2 , pr-3, pr-4, pr-5
+	pt-1 , pt-2 , pt-3, pt-4, pt-5
+	pb-1 , pb-2 , pb-3, pb-4, pb-5 
+--------------------------------------------
+
+		Classes for bgcolor 
+		.bg-primary  - blue 
+		.bg-info  - skyblue 
+		.bg-danger  - red 
+		.bg-success  - green 
+		.bg-warning  - yellow 
+		.bg-secondary  - grey 
+		.bg-dark  - black 
+		.bg-black  - black 
+		.bg-white  - white 
+		.bg-light  - cremwhite 
+----------------------------------------
+	Classes for text color 
+		.text-primary  - blue 
+		.text-info  - skyblue 
+		.text-danger  - red 
+		.text-success  - green 
+		.text-warning  - yellow 
+		.text-secondary  - grey 
+		.text-dark  - black 
+		.text-black  - black 
+		.text-white  - white
+			 
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+     	Note - while creating a page using bootstrap, follow these steps
+		     1.link to bootstrap.css file in head section.
+			 2.follow body tag.
+			 3.inside body use these classes  
+			        *container       - it has gap from left and right.
+					*container-fluid - it has no any gap from any side.
+			 4.inside container or cintainter-fluid use a class called 
+			         .row
+			 5. inside the row , follow the columns			
+			     min - 1 and max - 12 from given 72
+				 
+  -----------------------------------------------------------------------------------------------------------
+
+   Class for image  
+        .img-fluid   
+        .img-thumbnail
+		.rounded-circle
+        .rounded
+
+   -----------------------------------------------------------------------------------------------------------
+
+      .border - all side border
+      .border-top - top side border	  
+      .border-left - left side border	  
+      .border-right - right side border	  
+      .border-bottom - bottom side border	  
+	  
+	 -------------------------------------------------------------------------------------------------------------
+
+    .shadow -all side applied 
+	
+	-------------------------------------------------------------------------------------------------------------
+	
+      Class for table
+		 .table 	
+	      .table-border
+            .table-sm
+            .table-striped
+
+   ---------------------------------------------------------------------------------------------------------------
+
+      Class for card
+		 .card 
+		      .card-header
+			  .card-body
+			  .card-footer
+			  
+	---------------------------------------------------------------------------------------------------------------
+
+      Alert message
+            .alert
+                  .alert- danger			
+                  .alert- success			
+                  .alert- warning			
+                  .alert- info			
+                  .alert- secondary			
+                  .alert- primary			
+				  
+	---------------------------------------------------------------------------------------------------------------
+	   class for input fields
+	   => text, email, password, number, file, textarea.
+				 .form-control
+				 .form-control-sm
+				 .form-control-md
+				 .form-control-lg
+		 
+	----------------------------------------------------------------------------------------------------------------
+
+     class for button
+      .btn 
+			   .btn-primary	 
+			   .btn-info	 
+			   .btn-success 
+			   .btn-warning	 
+			   .btn-light
+			   .btn-dark
+			   .btn-secondry
+	 
+	button with border 
+				.btn-outlet-primary
+				.btn-outlet-info
+				.btn-outlet-success
+				.btn-outlet-warning
+				.btn-outlet-dark
+				.btn-outlet-light   
+				.btn-outlet-secondary   
+	-------------------------------------------------------------------------------------------------------------------   
+	
+	      class for left navigation
+		     .list-group
+			      .list-group-item
+				  .active

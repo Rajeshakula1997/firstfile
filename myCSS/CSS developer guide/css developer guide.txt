@@ -1,0 +1,197 @@
+HTML - is collections of pre-defined tags.it has limited property and values.
+       Due to limited property & values css need to combine with html for responsive web page design.
+
+CSS - it has collections of unlimited property & values.
+      it use to change to look and feel of web page.
+
+     Responsive webpage = HTML(tags) + CSS(property & values)
+
+   Type of CSS
+      1.inline css
+	  2.internal css
+	  3.external css
+	  4.import css
+	  
+	  
+	  1. Inline css
+	      example-1 :-
+		       <div style="property:value; property:value:"></div>
+			   As
+			     <div style="height:200px; width:300px; background:red;"></div>
+				 
+		2. internal css : -             
+										An internal CSS is used to define a style for a single HTML page.
+
+							An internal CSS is defined in the <head> section of an HTML page, within a <style> element.
+		
+		
+					it is 1 to many write css cose 1 time and use in html many time.
+					for 1 to many css has given following methods
+					  1. css by tag name
+								 
+							example:			body{ background:skyblue; margin:50px;}
+								
+												div {
+												   background:orange;
+												   margin:1%;
+												   width:23%;
+												   float:left;
+												   height:150px;
+												   }
+				----------------------------------------------------------------------------------------------
+					  2. css by id  -    in 1 page 1type of design required only 1 time
+					        
+							example:            #one{
+												margin:1%;
+												background:orange;
+												height:120px;
+												text-align:center;
+												}
+				------------------------------------------------------------------------------------------------								
+					  3. css by class   -     in 1 page 1type of design required many time
+					  
+					       example:               .two{
+													margin:1%;
+													background:red;
+													width:31.33%;
+													float:left;
+													height:300px;
+													}
+                -------------------------------------------------------------------------------------------------
+				
+					  4. css by tag group
+					  
+					   example  -    h1, h2, a {
+										  font-style:italic;
+										  }
+										  
+				-------------------------------------------------------------------------------------------------	  
+					  5. css by parent and child tag
+					  
+					         example  -        ul li a{ 
+												   color:red; 
+												   font-size:30px; 
+												   text-decoration:none;
+												  }
+												  
+			------------------------------------------------------------------------------------------------------------
+				 
+				 
+		3.External css :-     
+																		An external style sheet is used to define the style for many HTML pages.
+
+																		To use an external style sheet, add a link to it in the <head> section of each HTML page:
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+     List of property and values 
+           height - 3 types
+					min-height:100px; - the min height is fixed
+					height:auto; - fully based on contents
+					height:100px; - it is fixed
+									
+           width -  4types	
+                width:100px; - it is fixid
+                width:100%; - it is based on screen width
+               min-width:100px;
+              max-width:400px;
+		   
+         background -  9types
+		 
+		 
+		 flote : it use to change block level element to inline 
+		      float : left; - it print from left to right
+			   float: right; - it print fron right to left
+		-------------------------------------------------------------------------------------------------------------------
+
+       text-align : it set the direction for text
+	         text-align:left;
+	         text-align:right;
+	         text-align:center;
+	         text-align:justify;
+		------------------------------------------------------------------------------------------------------------------
+
+        margin - it use to apply a space outside of container(tags)
+		   margin:auto; - it align the tag in center
+		   margin:30px; - it apply 30px gap from all side(left,right,top,bottom)
+		   margin-left:30px; - 30px gap from left side
+		   margin-right:30px; - 30px gap from right side
+		   margin-top:30px; - 30px gap from top side
+		   margin-bottom:30px; - 30px gap from bottom side
+		---------------------------------------------------------------------------------------------------------------
+		
+		padding - it ude to apply space inside of container(tags)
+		   padding:30px - it apply 30px gap from allside
+		   padding:top:30px - it apply 30px gap from top
+		   padding:left:30px - it apply 30px gap from left
+		   padding:right:30px - it apply 30px gap from right
+		   padding:bottom:30px - it apply 30px gap from bottom
+		
+---------------------------------------------------------------------------------------------------------------------------
+
+   Display:inline - it converts from block level tag to inline tag		
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+Abbreviation -			 File Format	                = File Extension
+APNG 		 --		Animated Portable Network Graphics	=  .apng
+GIF	         --   Graphics Interchange Format           =	.gif
+ICO          --	     Microsoft Icon						= .ico, .cur
+JPEG		--	 Joint Photographic Expert Group image	=.jpg, .jpeg, .jfif, .pjpeg, .pjp
+PNG			--  	Portable Network Graphics	        =.png
+SVG	       --    Scalable Vector Graphics	             =.svg

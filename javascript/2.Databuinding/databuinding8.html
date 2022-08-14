@@ -1,0 +1,39 @@
+<html>
+   <head>
+         <script>
+		     function one(pickname){
+			    // alert(pickname);
+				document.getElementById("mypic").src=pickname;
+			 }
+		 </script>
+		 
+		 <style>
+		 body{
+		 }
+		 
+		
+		 #mypic,  img:hover{
+			border-radius:25%; 
+			opacity:0.5;
+			cursor:pointer;
+			}
+		 
+		 
+		 </style>
+		 
+     </head>
+	<body>
+	   <h1 align="center"> Javascript image binding example </h1>
+	    <center>
+		    <img src="1.jpg" height="400" width="600" id="mypic"/>
+			<br/>
+			<br/>
+			
+			<img src="2.jpg" height="70" width="70" onmouseenter="one('2.jpg')"/>
+			<img src="3.jpg" height="70" width="70" onmouseenter="one('3.jpg')"/>
+			<img src="4.jpg" height="70" width="70" onmouseenter="one('4.jpg')"/>
+			<img src="5.jpg" height="70" width="70" onmouseenter="one('5.jpg')"/>
+			<img src="6.jpg" height="70" width="70" onmouseenter="one('6.jpg')"/>
+			</center>
+</body>
+</head>	

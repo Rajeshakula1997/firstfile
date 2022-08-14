@@ -1,0 +1,38 @@
+	{
+		"booklist":[
+		{
+			"id":1,
+			"name":"html",
+			"price":500,
+			"qty":10,
+			"pic":"abc.jpg"
+		},
+		{
+			"id":2,
+			"name":"css",
+			"price":600,
+			"qty":5
+		},
+		{
+			"id":3,
+			"name":"Bootstrap",
+			"price":300,
+			"qty":2
+		},
+		
+		{
+			"id":4,
+			"name":"Node js",
+			"price":500,
+			"qty":5
+		}
+		],
+		
+		"userlist2":[
+		   {"id":1, "fullname":"Ganesh 1", "mobile":66666111, "edu":"B.Tech"},
+		   {"id":2, "fullname":"Ganesh 2", "mobile":66666222, "edu":"B.Tech"},
+		   {"id":3, "fullname":"Ganesh 3", "mobile":66666333, "edu":"B.Tech"},
+		   {"id":4, "fullname":"Ganesh 4", "mobile":66666444, "edu":"B.Tech"},
+		   {"id":5, "fullname":"Ganesh 5", "mobile":66666555, "edu":"B.Tech"}
+		] 
+		}

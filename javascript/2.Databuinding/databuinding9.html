@@ -1,0 +1,85 @@
+<html>
+   <head>
+       <script>
+	         function one(){
+			    var data = "<h1> 1 to 10 number list </h1>  \n";
+				for (var i=1; i<=10; i++){
+				   data += "<p>" + i + "</p> \n";
+				}
+				alert(data);
+				document.getElementById("container").innerHTML=data;
+			 }
+			 
+			 function two(){
+			     var data = "<h3> 10 to 20 number list </h3> \n";
+				    for (var i=10; i<=20; i++){
+				   data += "<p>" + i + "</p>   \n";
+				   }
+				  alert(data);
+				document.getElementById("container").innerHTML=data; 
+			 }
+			 
+			 function three(){
+			      var data = "<h1> 1 to 20 odd numbers list </h1> \n";
+			        for (var i=0; i<=20; i=i+2){
+					  data += "<p>" + i + "</p> \n";
+					}
+									  alert(data);
+				document.getElementById("container").innerHTML=data; 
+			 }
+			 
+			 
+			 function four(){
+			      var data = "<h1> 1 to 20 even numbers list </h1> \n";
+			        for (var i=1; i<=20; i=i+2){
+					  
+					  data += "<p>" + i + "</p> \n";}
+					
+									  alert(data);
+				document.getElementById("container").innerHTML=data; 
+			 }
+			 
+			 
+			 var city = ["Banglore", "Pune", "Kolkota", "Delhi", "mumbai"];
+			 function five(){
+			      
+				  var data = "<h1> City List </h1>";
+				  
+				   city.map((name, index)=>{
+				       data = data + "<p>" + name + "</p>" ;
+					   
+				   })
+									 
+				document.getElementById("container").innerHTML=data; 
+			 }
+			 
+			 function six(){
+			      
+				  var data = "<h1> City List </h1>";
+				  
+				   city.reverse().map((name, index)=>{
+				       data = data + "<p>" + name + "</p>" ;
+					   
+				   })
+									 
+				document.getElementById("container").innerHTML=data; 
+			 }
+	   </script>
+   </head>
+   <body>
+   <h1> Javascript dynamic HTML </h1>
+      <button onclick="one()"> Print 1 to 10 </button>
+      <button onclick="two()"> Print 10 to 20 </button>
+      <button onclick="three()"> Print 1 to 20 even no. </button>
+      <button onclick="four()"> Print 1 to 20 odd no. </button>
+      <button onclick="five()"> city names asc </button>
+      <button onclick="six()"> city list desc </button>
+         <br/>
+		 
+		 
+		 <div id="container"></div>  
+		 
+		 
+		 
+   </body>
+   </html>

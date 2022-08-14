@@ -1,0 +1,60 @@
+<html>
+     <head>
+	     <script>
+		      function one(){
+			       var name =document.getElementById("fname").value
+				   var mobile = document.getElementById("mobile").value;
+				   var email = document.getElementById("email").value;
+				   var city = document.getElementById("city").value;
+				   var address = document.getElementById("address").value;
+				   
+				   document.getElementById("myname").innerText=name;
+				   document.getElementById("mymobile").innerText=mobile;
+				   document.getElementById("myemail").innerText=email;
+				   document.getElementById("mycity").innerText=city;
+				   document.getElementById("myaddress").innerText=address;
+			  }
+		 </script>
+	  </head>
+	  <body>
+	       <table align="center" cellpadding="10" width="60%">
+		       <caption>  <h1> Javascript Input & Output </h1>
+			   </caption>
+			   <tr>
+			         <td> <input type="text" id="fname" onkeyup="one()"/> </td>
+					 <td id="myname"></td>
+				</tr>
+				
+				<tr>
+			         <td> <input type="text" id="mobile" onkeyup="one()"/> </td>
+					 <td id="mymobile"></td>
+				</tr>
+				
+				<tr>
+			         <td> <input type="text" id="email" onkeyup="one()"/> </td>
+					 <td id="myemail"></td>
+				</tr>
+				
+				<tr>
+			         <td> <textarea type="text" id="address" rows="10" col="10" onkeyup="one()"> </textarea> </td>
+					 <td id="myaddress"></td>
+				</tr>
+				
+				<tr>
+				 <td>
+		      <select id="city" onchange="one()">
+			      <option value=""> Choose </option>
+			      <option value="Mumbai">  Mumbai</option>
+			      <option value="Pune"> Pune </option>
+			      <option value="Bangalore"> Bangalore </option>
+			      <option value="Delhi"> Delhi </option>
+				  </select>
+				  </td>
+				  <td id="mycity"></td>
+				  </tr>
+				  
+				  
+</table>				
+	  </body>
+	  </html>
+	  

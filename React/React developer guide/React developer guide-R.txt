@@ -1,0 +1,22 @@
+
+	React is a open source library for building user interfaces
+	React is a not framework.
+	React is a Focus on UI.		
+	React is a created and maintained by facebook.
+	DOM updates are handles gracefully in React. 
+	
+	
+	Components describe a part of the user interfaces
+	They are re-usable and can be nested inside other components
+	
+	Components Types :
+	    1.Stateless Functional Component
+	    2.Stateless Class Component
+		
+		          Functional									Class
+	    .Simple Functional								 .More features rich
+		.Use function components as much as possible     .Maintain their own private data-state	
+		.Absence of "this" keyword     					 .Complex UI logic
+		.Solution without using state					  .Provide lifecycle hook
+		.Mainly responsible for the UI                    . Stateful/Smart/Container
+		.Stateless/Dumb/Presentational	

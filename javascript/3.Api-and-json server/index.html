@@ -1,0 +1,75 @@
+<html>
+      <head>
+            <script>
+                  function one(){
+                        fetch("home.html")
+                        .then(response => response.text() )
+                        .then (fileData =>{
+                            // alert( fileData );
+                             document.getElementById("container").innerHTML =fileData;
+                  })
+                  }
+
+                  function two(){
+                        fetch("about.html")
+                        .then(response => response.text() )
+                        .then (fileData =>{
+                            // alert( fileData );
+                            document.getElementById("container").innerHTML =fileData;
+                        })
+                  }
+
+                  function three(){
+                        fetch("user.html")
+                        .then (response=>response.text())
+                        .then(fileData =>{
+                     document.getElementById("container").innerHTML =fileData;    
+                        })
+
+                  }
+
+                  function four(){
+                        fetch("gallery.html")
+                        .then (response=>response.text())
+                        .then(fileData =>{
+                     document.getElementById("container").innerHTML =fileData;    
+                        })
+
+                  }
+
+                  function five(){
+                        fetch("service.html")
+                        .then (response=>response.text())
+                        .then(fileData =>{
+                     document.getElementById("container").innerHTML =fileData;    
+                        })
+
+                  }
+
+                  function six(){
+                        fetch("profile.html")
+                        .then (response=>response.text())
+                        .then(fileData =>{
+                     document.getElementById("container").innerHTML =fileData;    
+                        })
+
+                  }
+            </script>
+
+      </head>
+      <body>
+            <center>
+           <h1>  Javascript API fetch( ) function <h1>
+                 <button onclick="one()"> Home </button> 
+                 <button onclick="two()"> About Us </button> 
+                 <button onclick="three()"> User </button> 
+                 <button onclick="four()"> Gallery </button> 
+                 <button onclick="five()"> Services </button> 
+                 <button onclick="six()"> Profile </button> 
+           </center>
+           <hr color="orange" size="10"/>
+
+           <div id="container" align="center"> No Data......</div>
+           </body> 
+
+</html>

@@ -1,0 +1,35 @@
+<html> 
+    <head>
+	   <script>
+	   function f() {
+	        var person = {name : "rajesh",
+							age : 25,
+							edu : "B.tech",
+							gender : "male",
+							getdetails : function(){
+			
+			   return "name is " +this.name+", age is " +this.age;
+			   }
+			   };
+				document.write(person.name);
+				document.write("<br/>");
+				
+				document.write(person.age);		
+				document.write(person['age']);		
+				document.write("<br/>");	
+				
+				document.write(person.edu);		
+				document.write("<br/>");
+				
+document.write(person.getdetails());		
+				document.write("<br/>");
+				
+				document.write(person.gender);		
+				
+					}
+	   </script>
+	</head>
+	<body>
+	<input type="button" value="click" onclick="f()">
+	</body>
+</html>

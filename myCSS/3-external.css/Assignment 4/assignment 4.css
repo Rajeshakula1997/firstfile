@@ -1,0 +1,32 @@
+ body{
+	 margin:20px;}
+		    
+	     div {
+			  border:2px solid red;
+			   margin:1%;
+			   width:22.6%;
+			   float:left;
+			   height:150px;
+			   text-align:center;
+			   font-size:40px;
+			   }
+			   
+			 p{
+			  border:2px solid red;
+			   margin:1%;
+			   width:47.5%;
+			   float:left;
+			   height:150px;
+			   text-align:center;
+			   font-size:40px;
+			   }
+			   
+			section{
+			  border:2px solid red;
+			   margin:1%;
+			   width:97.5%;
+			   float:left;
+			   height:150px;
+			   text-align:center;
+			   font-size:40px;
+			   }

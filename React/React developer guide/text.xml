@@ -1,0 +1,17 @@
+
+<?xml version="1.0" ?>
+<userlist>
+			<user>
+			      <name> Ajit</name> 
+			      <age> 20 year</age> 
+			      <edu> MCA</edu> 
+			      <year> 2011</year> 
+			</user>
+
+				<user>
+			      <name> Mohit</name> 
+			      <age> 25 year</age> 
+			      <edu> B.Tech</edu> 
+			      <year> 2015</year> 
+			   </user>
+			 </userlist>  

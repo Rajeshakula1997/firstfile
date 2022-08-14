@@ -1,0 +1,163 @@
+<html>
+    <head>
+			<title>
+			</title>
+			
+			<style>
+			section {
+			margin:0%;
+			  height:60%;
+			  width:25%;
+			  padding:40px 2px 70px;
+			  float:left;
+			  background-color:skyblue;
+			}
+			table{
+			height:20%;
+			width:74%;
+			float:right;
+			  
+			 }
+			 
+			</style>
+			
+			<script>
+			     var user = [tid : "4" , tnumber : "Vehicle" , type : "Small" , root : "Goa" , driver : "Jaffa", num. : "99848xxxx", action : "Root master"];
+				   
+				 function getuser(){
+				 
+				  var data ="";
+				 for (var i=0; i<user.length; i++) {
+				 
+				 data = data + "<tr align='center'>";
+					data = data + "<td>" + i + "</td>";
+					data = data + "<td>" +user[i].tid + "</td>";
+					data = data + "<td>" +user[i].tnumber + "</td>";
+					data = data + "<td>" +user[i].type + "</td>";
+					data = data + "<td>" +user[i].root + "</td>";
+					data = data + "<td>" +user[i].driver + "</td>";
+					data = data + "<td>" +user[i].num + "</td>";
+					data = data + "<td>" +user[i].action + "</td>";
+					
+					data = data + "<td> <button onclick='deleteuser("+ i +")'> Delete </button></td>";
+				
+				 data = data + "</tr>"; 
+					}
+					// console.log(data);
+					document.getElementById("personlist").innerHTML= data;
+				 }  
+				 
+				 function save(){
+				 
+				      var myid = document.getElementById("transport").value;
+				      var mynumber = document.getElementById("number").value;
+				      var mytype = document.getElementById("size").value;
+				      var myroot = document.getElementById("root").value;
+				      var mydrive = document.getElementById("driver").value;
+				      var mymobile = document.getElementById("mobile").value;
+				      var myaction = document.getElementById("action").value;
+					  
+					  var newuser =  {tid:myid , tnumber:mynumber , type:mytype , troot:myroot , driver:mydrive , num:mymobile , action:myaction};
+					
+					  
+				  
+					// user = user.concat(newuser);
+					 //user.splice(1, 0, newuser);     //add at 1 position
+					  user.unshift(newuser);
+					 // user.push(newuser);
+					
+					getuser();
+					document.getElementById("mag").innerHTML = "<h3>" + dname + "</h3> Driver add successfull";
+					
+					 document.getElementById("transport").value="";
+				     document.getElementById("number").value="";
+				     document.getElementById("size").value="";
+				     document.getElementById("root").value="";
+				     document.getElementById("driver").value="";
+				     document.getElementById("mobile").value="";
+				     document.getElementById("action").value="";
+				 }
+				 
+				 function deleteitem(index){
+					   //  alert(index);
+						 user.splice(index, 1);
+						 getuser();
+						 document.getElementById("msg").innerHTML = "Delete form list";
+					}
+			</script>
+	
+	</head>
+	 <body onload="getuser()">
+	 <div class="container"> 
+	
+	         
+	    <section align="center">
+		<h2> New Transport </h2>
+		<br/>
+		  Transport Number:
+		    <input type="text" id="transport"/>
+			
+			    <br/>
+			       <br/>
+					   Root Name: &nbsp; &nbsp; &nbsp; 
+				  <input type="text" id="number"/>
+					<br/><br/> 
+				  Size: &nbsp; &nbsp; &nbsp; &nbsp;
+				 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				  <input type="text" id="size"/>
+					<br/><br/>
+					
+					 Root: &nbsp; &nbsp; &nbsp; &nbsp; 
+					 &nbsp; &nbsp; &nbsp; &nbsp; 
+				  <input type="text" id="root"/>
+					<br/><br/>
+					
+					 Driver Name: &nbsp; &nbsp; 
+				  <input type="text" id="driver"/>
+					<br/><br/>
+					
+					 Driver Number:
+				  <input type="text" id="mobile"/>
+					<br/><br/>
+					
+					 Status: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				  <input type="text" id="action"/>
+					<br/><br/>
+				
+				  <p align="center" ><button> SAVE </button> </p>
+				  </section>
+				  </div>
+
+				<div class="con">
+				  <h1> Management Transport </h1>
+				    <table align="center" cellpadding="10" cellspacing="0" border="1">
+					<thead>
+					  <tr>
+					  <th>T-id </th>
+					  <th>T-Number </th>
+					  <th>Type </th>
+					  <th>Transport Root </th>
+					  <th>Driver </th>
+					  <th>Mobile No. </th>
+					  <th>Action </th>
+					  </tr>
+					  </thead>
+					   <tbody id="target">
+					     <tr>
+						    <td></td>
+							</tr>
+					   </tbody>
+ 					
+					</table>
+                  <p id="msg" align="center">
+				  </p>					
+				</div>		
+			  
+			
+			
+			
+			
+		
+	</body>
+	
+	</html>

@@ -1,0 +1,81 @@
+<html>
+   <head>
+   
+       <style>
+	        #myuser{
+			  display:flex;
+			  flex-wrap:wrap;
+			 
+			}   
+			
+			 p {
+			 background-color:skyblue;
+			
+			    width:16%;
+				margin:1%;
+				
+				color:black;
+				padding:20px 40px 20px;
+				text-align:center;
+				font-size:20px;
+			}
+			
+			p:hover{
+			     background:navy;
+				 cursor:pointer;
+			  }
+			
+	       </style>
+      <script>
+				var user = ["Alex" , "Mohit" , "Cylex" ,"raj" , "ram" , "ravan" , "rana" , "abcd" , "abcd" , "abcd" , "abcd" ,"abcd"];
+	       function getCustomer(){
+		   
+		       var data="";
+			   user.map((name, index)=>{
+			       data = data + "<p>" + index + "<br/>" + name + "</p>";
+				    
+ 			     })
+		   
+		   
+		   document.getElementById("myuser").innerHTML = data;
+		   document.getElementById("total").innerText = user.length;
+		   }
+		   
+		   function save(){
+		      var newuser = document.getElementById("fname").value;
+					if (newuser !=""){
+					 user.push(newuser);
+					 alert(newuser);
+				   document.getElementById("fname").value="";
+						getCustomer();  // reload the list
+						document.getElementById("fname").style.borderColor="green";
+						document.getElementById("msg").innerText = newuser +  "- Added successfully";
+						
+					}
+					 else{
+					   document.getElementById("fname").style.borderColor="red";
+					   document.getElementById("msg").innerText = "Invalid name";
+					 }
+		   }
+	  </script>
+	  </head>
+	  <body onload="getCustomer()">
+	        <h1 id="total" align="center">----- </h1> 
+			
+			<div align="center"> Enter new user name : <input type="text" id="fname"/>
+			<button onclick="save()"> Save </button>
+			</div>
+			
+			<div id="msg" align="center">
+			   
+			  </div>
+			
+			<div id="myuser"></div>
+			
+			
+					   
+			  
+	  </body>
+	  <html>
+	  
+   

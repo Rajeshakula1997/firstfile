@@ -1,0 +1,155 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="dist/css/bootstrap.css"/>
+		<link rel="stylesheet" href="icon/css/all.css"/>
+		<script src="dist/js/bootstrap.min.js"></script>
+		
+	</head>
+	<body>
+<section class="bg-primary p-2 text-white">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-4"> 88888888888</div>
+			<div class="col-lg-4 col-4"> contact@me.com </div>
+			<div class="col-lg-4 col-4 text-end"> 
+				<i class="fab fa-facebook m-1"></i>
+				<i class="fab fa-twitter m-1"></i>
+				<i class="fab fa-linkedin m-1"></i>
+				<i class="fab fa-instagram m-1"></i>
+			</div>
+		</div>
+	</div>
+</section>
+<!--top nav start-->
+<nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Bootstrap App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="signup.html">Sign Up</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#" 
+		  data-bs-toggle="modal" data-bs-target="#login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="service.html">Our Services</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!--top nav end-->
+
+
+<div class="container p-3">
+	<div class="row">
+		<div class="col-lg-6 offset-3">
+			<h2 class="text-center mb-4"> Create Account. Its Free </h2>
+			
+			<div class="row mb-3">
+				<div class="col-lg-3">Name</div>
+				<div class="col-lg-9"><input type="text" class="form-control"/></div>
+			</div><!--row end-->
+			
+			<div class="row mb-3">
+				<div class="col-lg-3">e-Mail</div>
+				<div class="col-lg-9"><input type="email" class="form-control"/></div>
+			</div><!--row end-->
+			
+			<div class="row mb-3">
+				<div class="col-lg-3">Password</div>
+				<div class="col-lg-9"><input type="password" class="form-control"/></div>
+			</div><!--row end-->
+			
+			<div class="row mb-3">
+				<div class="col-lg-3">Mobile No</div>
+				<div class="col-lg-9"><input type="number" class="form-control"/></div>
+			</div><!--row end-->
+			
+			<div class="row mb-3">
+				<div class="col-lg-3">City</div>
+				<div class="col-lg-9">
+					<select class="form-select">
+						<option>Choose</option>
+						<option>Bangalore</option>
+						<option>Mumbai</option>
+					</select>
+				</div>
+			</div><!--row end-->
+			
+			<div class="row mb-3">
+				<div class="col-lg-3">Address</div>
+				<div class="col-lg-9"><textarea class="form-control"></textarea></div>
+			</div><!--row end-->
+			
+			<div class="text-center">
+				<button class="btn btn-primary m-2"> Register </button>
+				<button class="btn btn-warning m-2"> Clear </button>
+			</div>
+			
+		</div> <!--6 end here-->
+	</div>
+</div>
+
+<footer	class="bg-success p-5 text-white text-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<p> Copyright@infocampus 2013 to 2022 </p>
+				<p>
+					<i class="fab fa-facebook fa-lg m-2"></i>
+					<i class="fab fa-linkedin fa-lg m-2"></i>
+					<i class="fab fa-twitter fa-lg m-2"></i>
+					<i class="fab fa-instagram fa-lg m-2"></i>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!--do not add any line after this--->
+
+<!--login modal start here-->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <div class="mb-3">
+			<label>e-Mail Id</label>
+			<input type="email" class="form-control"/>
+		 </div>
+		 <div class="mb-3">
+			<label>Password</label>
+			<input type="password" class="form-control"/>
+		 </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--login modal end here-->
+
+</body>
+</html>

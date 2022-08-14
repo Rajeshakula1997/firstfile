@@ -1,0 +1,194 @@
+<html>
+      <head>
+	  
+	        <style>
+			      i{
+				   color:red;
+				   font-style:normal;
+				   
+				  }
+			</style>
+			
+	      <script>
+		      function save(){
+			    var msg = "";
+					var formStatus = true;
+					var name = document.getElementById("fname").value;
+					if(name=="" || !isNaN(name))
+					{
+					   msg = "<i> Invalid Name! </i> <br/>";
+					  document.getElementById("nameError").innerHTML = msg;
+					  formStatus = false;
+					} else{
+					  document.getElementById("nameError").innerHTML = "";
+
+					}
+					
+					 //email validation 
+					   var emailid = document.getElementById("email").value;
+					   
+					   // test123mca_abc@gmail.com
+	   var epattern = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	   
+					   if( !epattern.test(emailid))
+					   {
+					    msg = "<i> Invalid email id! </i> <br/>";
+					  document.getElementById("emailError").innerHTML = msg;
+
+						formStatus = false;
+					   }else{
+					   					  document.getElementById("emailError").innerHTML = "";
+
+					   }
+					   
+					   //password validation
+					     var pass = document.getElementById("password").value;
+						 if(pass=="" || pass.length<6 || pass.lemgth>8)
+						 {
+						   msg = "<i> Invalid Password! </i> <br/>";
+						    document.getElementById("passwordError").innerHTML = msg;
+
+						   formStatus = false;
+						 }else{
+					  document.getElementById("passwordError").innerHTML = "";
+
+						 }
+						 
+						 //Mobile Number validation
+					     var mobile = document.getElementById("mobile").value;
+						 
+						 //
+						  var mpattern = /^[6-9]\d{9}$/;
+						  
+						  if( !mpattern.test(mobile))
+						  {
+						   msg = "<i> Invalid Mobile No.! </i> <br/>";
+						  document.getElementById("mobileError").innerHTML = msg;
+
+						   formStatus = false;
+						   }else{
+			    		  document.getElementById("mobileError").innerHTML = "";
+
+						   }
+						   
+						   var m= document.getElementById("male").checked;
+						   var f= document.getElementById("female").checked;
+
+
+						   // .alert("male is: -" +m + ", Female is : -" +f);
+
+
+						   
+						   if (m==false && f==false){
+						    msg = "<i> Invalid Gender! </i>";
+							document.getElementById("genderError").innerHTML = msg;
+							formStatus = false;
+						   }else {
+						  	document.getElementById("genderError").innerHTML = "";
+
+						   }
+						   
+						   
+						   // Address Validation
+						   var add = document.getElementById("address").value;
+						   if(add==""){
+								msg = "<i> Invalid Address </i>";
+								document.getElementById("addressError").innerHTML = msg;
+								
+						   }else{
+								document.getElementById("addressError").innerHTML = "";
+						   }
+						   
+						   
+						   
+					var tmc = document.getElementById("tnc").checked;
+					   if(tmc==false){
+					      msg = "<i> please select TMC!</i>";
+						  document.getElementById("tncError").innerHTML=msg;
+						  formStatus = false;
+					   }else {
+					   document.getElementById("tncError").innerHTML="";
+					    }
+						 
+						   
+					    // do not write anything after this line
+						
+						 if (formStatus==true){
+						 msg = "<i>Success: please wait Submitting to Server.....</i>";
+  					 document.getElementById("errorMessage").innerHTML = msg;
+					}
+				}						  
+		  </script>
+		  
+	   </head> 
+	   
+	   <body>
+		  <form>
+		      
+		      <table align="center" cellpadding="10">
+			    <caption> <h2> Form Validaion </h2></caption>
+				   <tr>
+				      <td colspan="2">
+					     <i >All the * marked fienld are mandatory </i>
+						 </td>
+						 </tr>
+						 <tr>
+						 <th> Full Name <i> * </i> </th>
+						 <td> <input type="text" id="fname"/> <span id="nameError"></span></td>
+						 </tr>	
+						 
+						 <tr>
+						 <th> email id <i> * </i></th>
+						 <td> <input type="email" id="email"/> <span id="emailError"></span></td>
+						 </tr>	
+						 
+						 <tr>
+						 <th> Password <i> * </i></th>
+						 <td> <input type="password" id="password"/> <span id="passwordError"></span></td>
+						 </tr>	
+						 
+						 <tr>
+						 <th> Mobile no <i> * </i></th>
+						 <td> <input type="number" id="mobile"/> <span id="mobileError"></span></td>
+						 </tr>
+						 
+						 <tr>
+						     <th> Gender </th>
+							 <td>
+							 <input type="radio" name="gender" id="male" value="M"/>male
+							 <input type="radio" name="gender" id="female" value="F"/>female
+							 
+							 <span id="genderError"></span>
+							 </td>
+							 </tr>
+							 
+							 
+							 <tr>
+								<th> Full address:</th>
+								<td>
+									<textarea id="address"></textarea> <span id="addressError"></span>
+								</td>
+							 </tr>
+							 
+							 <tr>
+							     <th>
+								       Terms and conditions </th> 
+									   <td> <input type="checkbox" id="tnc"value="Agree" checked /> I am agree on terms & conditions
+									   <p id="tncError"></p>
+									   </td>
+									   </tr>
+							 
+	
+							<tr>
+							<th colspan="2" id="errorMessage">
+							   
+							    <button type="button" onclick="save()"> Submit </button>
+									<button type="reset"> Reset </button>
+									</th>
+							</tr>
+			  </table>
+		  </form>
+	   </body>
+</html>
+	   
+  

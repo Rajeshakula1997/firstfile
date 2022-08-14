@@ -1,0 +1,36 @@
+ body{
+	 margin:3%;}
+		    
+	     #water{
+			  border:2px solid red;
+			   margin:1%;
+			   width:24%;
+			   float:left;
+			   height:450px;
+			   text-align:center;
+			   font-size:20px;
+			    font-size:25px;
+			   }
+			   
+		#milk{
+			  border:2px solid red;
+			   margin:1%;
+			   width:71%;
+			   float:right;
+			   height:80px;
+			   text-align:center;
+			   
+			   font-size:25px;
+			  
+			   }	   
+		#tea{
+			  border:2px solid red;
+			   margin:1%;
+			   width:71%;
+			   float:right;
+			   height:250px;
+			   text-align:center;
+			   font-size:20px;
+			    font-size:25px;
+				padding:45px 0px 50px;
+			   }

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+     <head>
+	     <title>
+		 
+		 </title>
+		 <script>
+		        function one(){
+				    var user=["01" , "02" , "03" , "04" , "05" , "06"];
+					var data="<h1> user id </h1>";
+					user.map ((name,index)=>{
+					   data = data +"<p>"+name+"</p>";
+					   })
+			   document.getElementById("container").innerHTML = data;
+			 }  
+			 
+		        function two(){
+				    var prodect=["Redmi" , "Sumsung" , "OnePlus" , "vivo" , "oppo" , "iphone"];
+					var data="<h1> product </h1>";
+					product.map ((name,index)=>{
+					   data = data +"<p>"+name+"</p>";
+					   })
+			   document.getElementById("container").innerHTML = data;
+			 }
+
+				 function three(){
+				    var customer=["Mahesh" , "Suresh" , "Ramesh" , "Mukesh" , "Naresh" , "Ganesh"];
+					var data="<h1> customers </h1>";
+					customer.map ((name,index)=>{
+					   data = data +"<p>"+name+"</p>";
+					   })
+			   document.getElementById("container").innerHTML = data;
+			 }  
+			 
+			  function four(){
+				    var city=["Bangalore" , "Mumbai" , "Chennai" , "Hyderabad" , "Delhi" , "Pune"];
+					var data="<h1> cities </h1>";
+				    city.map ((name,index)=>{
+					   data = data +"<p>"+name+"</p>";
+					   })
+			   document.getElementById("container").innerHTML = data;
+			 }  
+		 </script>
+		 <style>
+		     body{
+			 
+			 }
+			 
+          #topnav{
+			  margin-top:0%;
+			  margin:3%;
+			  background-color:blue;
+			 
+			   width:92%;
+			  display:flex;
+			  decoration:none;
+			 }
+			 
+			#idea{
+			  padding:10px 110px 10px;
+			 list-style-type:none;
+			    
+			} 
+			
+			.water1{
+			text-align:center; 
+			width:71px;
+			height:220px;
+			margin:0px;
+			float:left; 
+			background:orange; 
+			padding:100px;
+			margin-top:-30px;
+			margin-left:35px;
+			}
+			
+			.water2{
+			text-align:center; 
+			width:71px;
+			height:220px;
+			margin:0px;
+			float:left; 
+			background:orange; 
+			padding:100px;
+			margin-top:-30px;
+			margin-left:25px;
+			}
+			
+			.water3{
+			text-align:center;
+			width:71px;
+			height:220px;
+			margin:0px;
+			float:left; 
+			background:orange; 
+			padding:100px;
+			margin-top:-30px;
+			margin-left:25px;
+			}
+			
+			.water4{
+			text-align:center;
+			width:71px;
+			height:220px;
+			margin:0px;
+			float:left; 
+			background:orange; 
+			padding:100px;
+			margin-top:-30px;
+			margin-left:30px;
+			}
+		 
+		 
+		 </style>
+		 </head>
+		 
+		 <body>
+		      <h1> JavaScript is a dynamically typed language, but TypeScript is a statically typed language.</h1>
+			  <div id="topnav">
+			 
+			  
+     <li id="idea"> <button  onclick="one()"> USER</button> </li>
+ <li id="idea"><button  onclick="two()"> PRODUCT</button> </li>
+      <li id="idea"> <button  onclick="three()"> CUSTOMER </button> </li>
+      <li id="idea"> <button onclick="four()"> CITY </button> </li>
+	  
+	 
+		 </div>
+		 
+		 
+		 <div text-align="top" class="water1">
+		  <h3>Users</h3>
+		 
+		   <p>A1 </p>
+		   <p>A2 </p>
+		   <p>A3 </p>
+		   <p>A4 </p>
+		   <p>A5 </p>
+		   <p>A6 </p>
+		   <p>A7 </p>
+		   
+		  
+		   </div>
+		   
+		   <div text-align="top" class="water2"> 
+		     <h3>Products</h3>
+		 
+		   <p>B1 </p>
+		   <p>B2 </p>
+		   <p>B3 </p>
+		   <p>B4 </p>
+		   <p>B5 </p>
+		   <p>B6 </p>
+		   <p>B7 </p>
+		  
+		   </div>
+		   
+		   <div class="water3"> 
+	        <h3>Customers</h3>
+		 
+		   <p>C1 </p>
+		   <p>C2 </p>
+		   <p>C3 </p>
+		   <p>C4 </p>
+		   <p>C5 </p>
+		   <p>C6 </p>
+		   <p>C7 </p>
+		   </div>
+		   
+		   <div class="water4"> 
+		   <h3>Cities</h3>
+		 
+		   <p>city1 </p>
+		   <p>city2 </p>
+		   <p>city3 </p>
+		   <p>city4 </p>
+		   <p>city5 </p>
+		   <p>city6 </p>
+		   <p>city7 </p>
+		   </div>
+		  <div id="container"></div>  
+    		 
+		 </body>
+		 
+</html>		 
+
+
+
+

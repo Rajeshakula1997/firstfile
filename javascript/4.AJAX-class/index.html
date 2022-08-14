@@ -1,0 +1,43 @@
+<html>
+    <head>
+	    <link rel="stylesheet" href="dist/css/bootstrap.css"/>
+		<script src="ajax.js"></script>
+	</head>
+	
+	<body class="bg-light" onload="getfile('home.html')">
+	   <section class="bg-primary p-2">
+	   <div class="container">
+	      <div class="row">
+		     <div class="col-lg-5"> <h1 class="text-danger"> AJAX </h1> </div>
+			 
+		     <div class="col-lg-7 text-end"> 
+			 <div class="btn-group"> 
+				                   <button class="btn btn-light" onclick="getfile('home.html')">Home </button>
+						       <button class="btn btn-light" onclick="getfile('user.html')">User </button>
+						       <button class="btn btn-light" onclick="getfile('product.html')">Product </button>
+							<button class="btn btn-light"onclick="getfile('gallery.html')">Gallery </button>
+							<button class="btn btn-light"onclick="getfile('contact.html')">Contact Us </button>
+			             </div>
+			 </div>
+	   </div>
+	   </section>
+	      <section class="p-5" id="ajaxdata" style="min-height:500px;">
+		     <h1 class="text-center"> No Data </h1>
+        </section>	
+
+         <footer class="bg-secondary p-5 text-center text-white">
+		      <div class="container">
+			      <div class="row">
+				      <div class="col-lg-12">
+					      <p> AJAX - Asynchronous javascript and XML </p>
+					      <p> It read file & api data without reloading the page... </p>
+					  
+					  </div>
+				  </div>
+			  
+			  </div>
+</footer>		 
+	</body>
+
+  
+</html>

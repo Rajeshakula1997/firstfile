@@ -1,0 +1,16 @@
+input{
+    padding: 10px;
+    margin: 10px 0;
+    font-size: medium;
+}
+.control-form{
+    display: flex;
+    justify-content: center;
+}
+.file-controller{
+    border: 1px solid gray;
+    font-size: 10.5px;
+}
+.form-background{
+    background-color: #47d7e1;
+}

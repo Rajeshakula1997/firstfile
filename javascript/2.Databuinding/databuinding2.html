@@ -1,0 +1,59 @@
+<html>
+   <head>
+      <script>
+	        
+			   var profile= " <h1> my profile </h1>";
+			      profile += "<p> Full Nmae : abcd1 </p>"
+			      profile += "<p> Mobile :  9848xxxx </p>"
+			      profile += "<p> Age : 50 years </p>"
+			      profile += "<p> Gender : male </p>"
+			      profile += "<p>  City : Bangalore </p>"
+				  
+				  
+				  function four(){
+				     var Education = "<h6> my studies </h6>";
+					      Education += "<p> <li> B.TECH1 </li> </p>";
+					      Education += "<p> <li> B.TECH2 </li> </p>";
+					      Education += "<p> <li> B.TECH3 </li> </p>";
+					      Education += "<p> <li> B.TECH4 </li> </p>";
+						  
+				document.getElementById("myblock").innerHTML= Education;
+			}
+				  
+				  
+				
+            function three(){
+			    var skill = "<h1> my skill </h1>";
+				     skill += "<p> HTML </p>";
+				     skill += "<p> css </p>";
+				     skill += "<p> js </p>";
+				     skill += "<p> bs </p>";
+				document.getElementById("myblock").innerHTML= skill;
+			}
+
+				
+			 function two(){
+			   document.getElementById("myblock").innerText= profile;
+			 }  
+			
+			
+			function one(){
+				document.getElementById("myblock").innerHTML= profile;
+			}
+	  </script>
+	 </head>
+<body>
+      <h1> Different Between innertext & innerHTML example </h1>
+	
+	  <br/>
+	        <button onclick="one()"> HTMl format </button>  
+	        <button onclick="two()"> Text Format </button>  
+	        <button onclick="three()"> Skills </button>  
+	        <button onclick="four()"> Education </button>  
+			
+	 <br/>
+	  <div id="myblock">
+	     
+		 </div>
+</body>
+</html>	 

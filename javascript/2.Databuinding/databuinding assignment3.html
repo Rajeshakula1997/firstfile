@@ -1,0 +1,96 @@
+<html>
+  <head>
+  <style>
+      #myuser{
+	          margin:2%;
+	          margin-left:10%;
+	          display:flex;
+			  flex-wrap:wrap;
+	  }
+	  p{
+	     width:20%;
+	     height:30px;
+		 margin:1%;
+		 
+		 padding-bottom:20px;
+		text-bottom:10%;
+		 background:skyblue;
+		 
+		 color:black;
+		 text-align:center;
+	
+		 border:3px solid red;
+		 border-radius:50%;
+		 font-size:100%;
+		
+	  }
+	  p:hover{
+	 
+	      background:pink;
+		  style:img-fluid rounded;
+	  }
+	  #fname{
+	    
+	  }
+	  
+  </style>
+     <script>
+	    var user = [];
+	    function getCity(){
+		       var data= "";
+			   user.map((name, index)=>{
+			       data = data + "<p>" + "<br/>"+ name + "</p>"
+			   })
+		      document.getElementById("myuser").innerHTML = data;
+		     // document.getElementById("total").innerText = user.length;
+		}
+		function save(){
+		       var newuser = document.getElementById("fname").value;
+			   if(newuser !="" ){
+			    user.unshift(newuser);
+				document.getElementById("fname").value="";
+				getCity();//to reload the list
+	      document.getElementById("fname").style.borderColor="";
+		  document.getElementById("msg").innerText= newuser + " - Added  Successfully";
+			   }else{
+		  document.getElementById("fname").style.borderColor="red";
+		  document.getElementById("msg").innerText="invalid Name";
+			   }
+		}
+	 </script>
+  </head>
+  <body onload="getCity()">
+           <br/><br/><br/>
+          <h1 id="total" align="center"></h1>
+		  <br/>
+		  <div align="center">
+		     Choose City Name :
+			 <select id="fname">
+			      <option> CHOOSE YOUR CITY</option>
+				  <option> Banglore</option>
+				  <option> Pune</option>
+				  <option> Hyderabad</option>
+				  <option> Chennai</option>
+				  <option> Lucknow</option>
+				  <option> Varanasi</option>
+				  <option> Goa</option>
+				  <option> Kota</option>
+				  <option> Jaipur</option>
+				  <option> Agra</option>
+				  <option> Ranchi</option>
+				  <option> Mumbai</option>
+				  <option> ladhak</option>
+				  <option> Narora </option>
+				  <option> Mirzapur</option>
+				  
+				 
+				  <option> Delhi</option>
+				 <div id="msg" align="center"></div>
+				
+			</select>
+			 <button onclick="save()"> SAVE </button>
+		  </div>
+		  
+		  <div id="myuser"></div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+   <head>
+      <script>
+	     function one(){
+		    var fname = document.getElementById("fname").value;
+		    var city = document.getElementById("city").value;
+			
+		    var age = document.getElementById("age").value;
+			var msg = "Hi,"+fname+" you are from " +city+   + -age+ " years";
+			
+			document.getElementById("info").innerText=msg;
+			//alert(fname + city);
+		 }
+	  
+	  </script>
+	 </head>
+	 <body>
+	     <h1> Javascript & onchange example </h1>
+		 
+		 <p> Enter Name : <input type="text" id="fname" />
+		 
+		 City Name :
+		      <select id="city">
+			      <option value=""> Choose </option>
+			      <option value="Mumbai">  Mumbai</option>
+			      <option value="Pune"> Pune </option>
+			      <option value="Bangalore"> Bangalore </option>
+			      <option value="Delhi"> Delhi </option>
+				  </select>
+				  
+		Enter Age : 
+		
+		<input type="text" id="age" />
+		
+				  <button onclick="one()"> Find Me </button>
+				  </p>
+				   
+				 <h1 id="info"></h1> 
+             				 
+				  
+	 
+	 </body>
+</html>
+	 

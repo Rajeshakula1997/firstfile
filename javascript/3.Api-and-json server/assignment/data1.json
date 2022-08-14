@@ -1,0 +1,53 @@
+
+   {
+      "company":[
+	           {"id":1, "name":"TCS"},
+	           {"id":2, "name":"Wipro"},
+	           {"id":3, "name":"Accenture"},
+	           {"id":4, "name":"Infosys"},
+                 {"id":5, "name":"IBM"}
+	          ],
+	  
+	  "product":[
+	        {"id":1, "pname":"AC"},
+	        {"id":2, "pname":"Refrigerator"},
+	        {"id":3, "pname":"Fan"},
+              {"id":4, "pname":"Light"},
+              {"id":5, "pname":"Washing Machine"}
+	       ],
+
+	  "customer":[
+            {"id":1, "name":"Siva", "age":11, "edi":"B.Tech", "gender":"M"},
+            {"id":2, "name":"vaseem", "age":12, "edi":"B.Tech", "gender":"M"},
+            {"id":3, "name":"Subhasmita", "age":13, "edi":"B.Tech", "gender":"F"},
+            {"id":4, "name":"Hema", "age":14, "edi":"B.Tech", "gender":"F"},
+            {"id":5, "name":"Srinivas", "age":15, "edi":"B.Tech", "gender":"M"},
+            {"id":6, "name":"Naveen", "age":16, "edi":"B.Tech", "gender":"M"},
+            {"id":7, "name":"Manisha", "age":17, "edi":"B.Tech", "gender":"F"},
+            {"id":8, "name":"Ashok", "age":18, "edi":"B.Tech", "gender":"M"},
+            {"id":9, "name":"teja", "age":19, "edi":"B.Tech", "gender":"F"},
+            {"id":10, "name":"Nikhil", "age":20, "edi":"B.Tech", "gender":"M"},
+            {"id":11, "name":"Rajesh Babu", "age":21, "edi":"B.Tech", "gender":"M"},
+            {"id":12, "name":"Dinesh", "age":22, "edi":"B.Tech", "gender":"M"},
+            {"id":13, "name":"Nataraj", "age":23, "edi":"B.Tech", "gender":"M"},
+            {"id":14, "name":"Rajesh", "age":24, "edi":"B.Tech", "gender":"M"}
+
+        ],
+        
+	  "inverstor":[
+            {"id":13, "name":"Nataraj", "number":"9848000001"},
+            {"id":12, "name":"Dinesh", "number":"9848000002"},
+            {"id":11, "name":"Rajesh Babu", "number":"9848000003"},
+            {"id":10, "name":"Nikhil", "number":"9848000004"},
+            {"id":9, "name":"teja",  "number":"9848000005"},
+            {"id":8, "name":"Ashok",  "number":"9848000006"},
+            {"id":7, "name":"Manisha",  "number":"9848000007"},
+            {"id":6, "name":"Naveen", "number":"9848000008"},
+            {"id":5, "name":"Srinivas",    "number":"9848000009"},
+            {"id":4, "name":"Hema",   "number":"9848000010"},
+            {"id":3, "name":"Subhasmita",    "number":"9848000011"},
+            {"id":2, "name":"vaseem",  "number":"9848000012"},
+            {"id":1, "name":"Siva",    "number":"9848000013"},
+            {"id":0, "name":"Rajesh",    "number":"9848000014"}
+        ]
+   }

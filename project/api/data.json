@@ -1,0 +1,36 @@
+{
+  "account": [
+    {
+      "id": 1,
+      "email": "vendor1@gmail.com",
+      "password": "123",
+      "name": "Digital Media",
+      "mobile": 8884166608
+    }
+  ],
+  "productlist": [
+    {
+      "id": 1,
+      "name": "Mango",
+      "price": 300,
+      "details": "its good apple",
+      "photo": "1.JFIF"
+    },
+    {
+      "id": 2,
+      "name": "Apple imported",
+      "price": 100,
+      "details": "its good mango",
+      "photo": "3.PNG"
+    },
+    {
+      "id": 2,
+      "name": "Apple",
+      "price": 450,
+      "details": "its good Brand",
+      "photo": "4.PNG"
+    }
+  ],
+  "cart": [],
+  "orderlist": []
+}

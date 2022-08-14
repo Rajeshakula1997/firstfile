@@ -1,0 +1,160 @@
+--------------------------------------------
+	Monday to Friday (JavaScript)
+	Saturday and Sunday (Bootstrap)
+--------------------------------------------
+->variables & data type 
+
+->Control Structure
+	-condition
+		->if else 
+		->if else if 
+		->nested if 
+		->switch case
+	-loop
+		->for loop 
+		->while loop 
+		->do while 
+		->map() - need array 
+		->forEach() - need array 
+->Array 
+		->single dimensional
+		->multi dimensional
+		->nested Array			
+->function 
+	->3 type of function 
+	  1. function 
+	  2. function without name 
+	  3. fat arrow function 
+	  
+=>Data binding 
+	1. type of popup-window 
+ -> alert() - it use to give confirmation to user - with ok button 
+ -> confirm() - it use to ask confirmation from use in boolean as true or false
+ -> prompt() -  it use to ask non boolean input from user
+		 	 
+	2. Events in javascript
+		=>Type of event in javascript
+			a. Mouse Events 
+				->onclick
+				->ondblclick
+				->onmousedown 
+				->onmousemove
+				->onmouseout
+				->onchange 
+				
+			b. Keyboard Events 
+				->onkeypress
+				->onkeydow
+				->onkeyup
+				->onfocus
+				->onblue 
+				
+			c. Form Events 
+				->onsubmit - in form validation 
+			d. Body Events 
+				->onload
+
+	What is data binding in javascript	
+	-> use  proprty only for input tags 
+	using => .value 
+	->use bellow proprty only for output element
+	
+	using => .innerText - if only text data
+			 .innerHTML - if text with html tags 
+---------------------------------------------
+=>Array 
+	->single dimensional 
+	->multi dimensional
+	->Nested Array 
+	->add , list, edit, delete 
+	->html + css + bootstrap + javascript
+----------------------------------------------
+=>Web Storage (html 5)
+	->localStorage 
+	->sessionStorage 
+-----------------------------------------
+Live Server 
+	->JSON-SERVER
+	->import & export 
+	->async & Await 
+-----------------------------------------
+API
+	->fetch
+	->then 
+	->read local json data 
+	->read data from server
+	->JSON Parsing 
+promise & call back 
+AJAX 
+Form Validation 
+OOPS 
+   class object 
+   inheritance  
+-------------18 to 20 classes----------
+
+Introduction to React
+ JSX - 4
+ Environment Setup
+ ES4 , Arrow function, Class OOPS
+ Initial App Structure
+ Components
+ State
+ Props Overview
+ form Validation
+ Component API
+ Component Life Cycle
+ Forms
+ Events
+ Refs
+ Keys
+ Router
+ JavaScript, ECMAScript 4, or ES4
+ JS OOPS , Arrow Functions
+ Reactjs , Hooks , State
+ API, Props, Validation
+ GET ,POST, Fetch
+ Redux + JavaScript
+ Redux + React
+ Redux Flow
+ Async in Redux
+ Testing Redux
+ ------------------------------
+ 25 to 30 Hours Live Project 
+ React js Live Project Training
+ Build , Deployment
+ ------------------------------
+	download nodejs & install 
+	download vscode editor & install 
+	notepad++ / sublime editor 
+-------------------------------
+
+
+
+
+
+
+	Web Storage (to store data in browser memory up to 10mb)
+		=>localStorage  - parmanent Store (it will store even after closing of browser also)
+		=>sessionStorage - temp store (after browser close it loose the data)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

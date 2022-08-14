@@ -1,0 +1,174 @@
+How to setup react project
+   create a folder as react
+   open cmd in react folder 
+   run the command to setup environment
+       -> npm install create-react-app 
+    create new project in react 
+         -> npx create-react-app project1
+      ------------------------------------------------------------
+
+        How to install bootstrap in react   
+             -> run the command in cmd under project folder 
+                => npm install bootstrap
+             ->add bellow line in index.js
+                 => import 'bootstrap/dist/css/bootstrap.css';
+       ----------------------------------------------------------------
+	   How to install icons
+	              icons folder placed in public folder and run the command in cmd under project folder 
+				  import 'icon/css/all.css';
+				 
+				 [or]
+				  
+				  {Component} - placed at import in App.js
+				  import {FaAddressBook, FaBook, FaHome, FaLock, FaPortrait, FaServicestack} from "react-icons/fa";
+				  <FaHome/> <FaBook/> ........... this are given at place we required place.
+				  
+	----------------------------------------------------------------------------------------------------------------
+
+			import { HashRouter, Routes, Route, Link } from 'react-router-dom';
+			=> npm install react-router-dom
+			
+			
+			for build folder use this command
+			=>npm run build
+			
+			how to install axios
+			=> npm install axios
+			
+	-------------------------------------------------------------------------------------------------------------------
+
+		How to start json server
+		     json-server --watch filename.json --port 1234
+			 
+			 json-server --watch data.json --port 1234
+			 
+		    => npm install -g json-server
+			
+			
+	----------------------------------------------------------------------------------------------------------------		
+
+         JSX - JavaScript and XML
+         JSX - JavaScript + html + xhtml based on xml rules & regulation
+     --------------------------------------------------------------------------
+
+        XML - xtensible markup language
+            -> we can create own tag
+            -> xml tags are case sensitive
+            ->every xml document will have only one parent tag. as html body tag.
+			
+			
+	   Sample document for xml ?
+	   
+			<?xml  version="1.0"   ?>
+			
+		<userlist>
+			<user>
+			      <name> Ajith</name> 
+			      <age> 20 year</age> 
+			      <edu> MCA</edu> 
+			      <year> 2011</year> 
+			   </user>
+
+				<user>
+			      <name> Mohit</name> 
+			      <age> 25 year</age> 
+			      <edu> BTech</edu> 
+			      <year> 2015</year> 
+			   </user>
+			 </userlist>  
+	----------------------------------------------------------------------------------
+	
+	import => it use to call, bring, link, variable, function, class, object from
+				one page to other page in react.
+	export =>  it use to make variable, function, class, object, etc. importable.
+	
+	--------------------------------------------------------------------------------
+	
+	   Rules of JSX 
+	        1. if inside a component more then 1 jsx element is required then 
+			    keep inside parentjsx element 
+				  ex :- 
+				     <div>
+					     <h1> About Us</h1>
+						 <p> asdfasdfasdf asdfasdfasdfasdfas dfasdfasdfasdfasdfasdf </p>
+						 <p> asdfasdfasdf asdfasdfasdfasdf asdfasdfasd fasdfasdfasdf </p>
+						 <p> asdfasdf asdfasdfas dfasdfasdf asdfasdfasdfasd  fasdfasdf </p>
+						 <p> asdfasdfasdfasdfasdfa sdfasdfasdfasdfasdf asdfasdfasdf </p>
+						 
+				     </div>
+						 
+	          --------------------------------------------------------------------
+
+      2. if inside a component more then 1 jsx element is required then 
+			   the parentelement can be user define also  
+				  ex :- 
+				     <abc>
+					     <h1> About Us</h1>
+						 <p> asdfasdfasdf asdfasdfasdfasdfas dfasdfasdfasdfasdfasdf </p>
+						 <p> asdfasdfasdf asdfasdfasdfasdf asdfasdfasd fasdfasdfasdf </p>
+						 <p> asdfasdf asdfasdfas dfasdfasdf asdfasdfasdfasd  fasdfasdf </p>
+						 <p> asdfasdfasdfasdfasdfa sdfasdfasdfasdfasdf asdfasdfasdf </p>
+						
+					</abc>	
+	  
+		--------------------------------------------------------------------
+		
+      3. if inside a component more then 1 jsx element is required then 
+			   the parentelement can be empty tag <> </> also  
+				  ex :- 
+				     <>
+					     <h1> About Us</h1>
+						 <p> asdfasdfasdf asdfasdfasdfasdfas dfasdfasdfasdfasdfasdf </p>
+						 <p> asdfasdfasdf asdfasdfasdfasdf asdfasdfasd fasdfasdfasdf </p>
+						 <p> asdfasdf asdfasdfas dfasdfasdf asdfasdfasdfasd  fasdfasdf </p>
+						 <p> asdfasdfasdfasdfasdfa sdfasdfasdfasdfasdf asdfasdfasdf </p>
+						
+					</>
+					
+	------------------------------------------------------------------------
+
+   4.	if inside a component more then 1 jsx element is required then 
+			   the parentelement can be arrey [] also  
+				  ex :- 
+				     [
+					     <h1> About Us</h1>,
+						 <p> asdfasdfasdf asdfasdfasdfasdfas dfasdfasdfasdfasdfasdf </p>,
+						 <p> asdfasdfasdf asdfasdfasdfasdf asdfasdfasd fasdfasdfasdf </p>,
+						 <p> asdfasdf asdfasdfas dfasdfasdf asdfasdfasdfasd  fasdfasdf </p>,
+						 <p> asdfasdfasdfasdfasdfa sdfasdfasdfasdfasdf asdfasdfasdf </p>
+			
+					]
+				note : after every element , is required where last  , is optional.
+				
+	--------------------------------------------------------------------------------
+				React Routing 
+				=> In app.js file
+				
+				
+				   1.npm install react-router-dom
+				   2.Add below
+				   import { HashRouter, Routes, Route, Link } from 'react-router-dom'; 
+				   
+				   <HashRouter>
+            <ul className="mynav">
+                <li> <Link to="/" className="mylink">My Home</Link></li>
+                <li> <Link to="/userlist" className="mylink">User</Link> </li>
+                <li> <Link to="/booklist" className="mylink">Books</Link></li>
+                <li> <Link to="/itemlist" className="mylink">Items</Link></li>
+                <li> <Link to="/productlist" className="mylink">Product</Link></li>
+            
+            </ul>
+            <Routes>
+                         <Route exact path ="/" element ={<Home /> } />
+                          <Route exact path ="/userlist" element ={ <Myuser /> } />
+                          <Route exact path ="/booklist" element ={ <Mybook /> } />
+                          <Route exact path ="/itemlist" element ={ <ItemList /> } />
+                          <Route exact path ="/productlist" element ={ <Myproduct /> } />
+
+                  </Routes>
+     </HashRouter>
+	 
+	 ----------------------------------------------------------------------------------------------------
+	
+					
+      	

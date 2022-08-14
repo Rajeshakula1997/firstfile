@@ -1,0 +1,104 @@
+<html>
+
+    <head>
+	    <style>
+		
+		</style>
+		
+		<script>
+		     var user = [
+			       {name : "raj" , age: "20years" , edu:"B.Tech" },
+			       {name : "alex" , age: "30years" , edu:"B.E"},
+			       {name : "Mohit" , age: "40years" , edu:"MCA"}
+				   ];
+				   
+				 function getuser(){
+				   var data ="";
+				 for (var i=0; i<user.length; i++){
+				 
+				 data = data + "<tr align='center'>";
+					data = data + "<td>" + i + "</td>";
+					data = data + "<td>" +user[i].name + "</td>";
+					data = data + "<td>" +user[i].age + "</td>";
+					data = data + "<td>" +user[i].edu + "</td>";
+					data = data + "<td> <button onclick='deleteuser("+ i +")'> Delete </button></td>";
+				
+				 data = data + "</tr>"; 
+					}
+					console.log(data);
+					document.getElementById("userlist").innerHTML= data;
+				 }  
+				 
+				 function save(){
+				 
+				      var fname = document.getElementById("fname").value;
+				      var myage = document.getElementById("age").value;
+				      var myedu = document.getElementById("edu").value;
+					  
+				    var newuser =  {name :fname , age:myage , edu:myedu};
+					
+					// user = user.concat(newuser);
+					 //user.splice(1, 0, newuser);     //add at 1 position
+					  user.unshift(newuser);
+					 // user.push(newuser);
+					
+					getuser();
+					document.getElementById("fname").value="";
+					document.getElementById("age").value="";
+					document.getElementById("edu").value="";
+					
+					
+				 }
+					function deleteuser(index){
+					     alert(index);
+						 user.splice(index, 1);
+						 getuser();
+						 document.getElementById("msg").innerHTML = "Delete form list";
+					}
+		     </script>
+			 
+		</head>
+	    <body onload="getuser()">
+		    
+		       <h1 align="center"> Javascript Multi dimentional array example </h1>
+			   
+			      <p align="center">
+				        <input type="text" placeholder="Full Name" id="fname"/>
+				        <input type="text" placeholder="Age" id="age"/>
+				        <input type="text" placeholder="Education" id="edu"/>
+				      <button onclick="save()"> New User </button> 
+				  </p>
+			    <table align="center" cellpadding="15"border="1" width="70%">
+				  
+				  <thead>
+					    <tr>
+						    <th> Index No. </th>
+						    <th> Full name </th>
+						    <th> Age  </th>
+						    <th> Education </th>
+						    <th> Action </th>
+						</tr>
+					</thead>
+
+					<tbody id="userlist">
+					    
+					</tbody>
+					
+					<tfoot>
+					    <tr>
+						    <th> Index No. </th>
+						    <th> Full name </th>
+						    <th> Age </th>
+						    <th> Education</th>
+						    <th> Action </th>
+						</tr>
+					</tfoot>
+				
+				</table>
+				
+				<p id="msg" align="center"> 
+				
+				</p>
+		
+		</body>
+</html>

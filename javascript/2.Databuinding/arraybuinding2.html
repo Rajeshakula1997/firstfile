@@ -1,0 +1,88 @@
+<html>
+    <head>
+	      <script> 
+		  var allbook = ["HTML" , "CSS"];
+		  function getbook(){
+		     var bookdata="";
+			 
+			 
+			 allbook.map((name, index)=>{
+			     bookdata += "<tr>" ;
+				 
+			     bookdata += "<td>"  + index + "</td>";
+				 
+			     bookdata += "<td>"  + name + "</td>";
+				 
+			     bookdata += "<td> <button onclick='deleteBook("+ index +")'> Delete </button> </td>";
+				 
+			     bookdata += "</tr>" ;
+			 });
+			  // alert(bookdata);
+			   document.getElementById("booklist").innerHTML = bookdata;		
+			   }
+			   
+			   function save(){
+			       var newbook = document.getElementById("newbook").value;
+			   
+			    // allbook.push("Test Book");    // add new in the last
+				  allbook.unshift(newbook);   // add in begining
+				  
+				  document.getElementById("message").innerText="Book Save Successfully";
+				  
+				  getbook();      // reload the book list
+						document.getElementById("newbook").value = "";		
+  
+			   }
+			   
+			      function deleteBook(bookindex){
+				      allbook.splice(bookindex,1);  // 1 for delete, 0for add
+					   getbook();  //reload the book after delete
+				  }
+			   
+		  </script>
+	    </head>
+		
+      <body onload="getbook()">
+		
+		   <h1> javascript array binding example </h1>
+		    <p>
+			   Enter Book Name : <input type="text" id="newbook"/>
+			   <button onclick="save()"> Save book </button> 
+			   </p>
+			   
+			   
+			   <p id="message"></p>
+			   
+			 <table cellpadding="10" border="1" cellspacing="0" width="500">
+			       <thead>
+				       <tr bgcolor="orange">
+					      <th> Book Index </th>
+					      <th> Book Nmae </th>
+					      <th> Action </th>
+					   
+					   </tr>
+				   
+				   </thead>
+				   <tbody id="booklist">
+				        <tr>
+						    <td colspan="3"> No records! </td>
+				   
+				   
+				   
+				   
+				   
+				   </tbody>
+				   <tfoot>
+				        <tr bgcolor="pink">
+					      <th> Book Index </th>
+					      <th> Book Nmae </th>
+					      <th> Action </th>
+					   
+					   </tr>
+
+				   </tfoot>
+			   
+			   
+			   </table>
+		</body>
+		</html>
